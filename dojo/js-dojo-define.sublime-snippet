@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+define([
+	"dojo/_base/lang",
+	"dojo/_base/declare",
+	"${1}"],
+
+function(lang,declare,${2}){
+	var ${3} = declare("${4}",${5},{
+		${6}
+	});
+	return ${3};
+});
+]]></content>
+	<tabTrigger>define</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

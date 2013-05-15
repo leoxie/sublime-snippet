@@ -1,0 +1,59 @@
+<snippet>
+	<content><![CDATA[
+define([
+	"dojo/_base/lang",
+	"dojo/_base/declare",
+	"dojo/store/Memory",
+	"egp/template/CrudTemplate",
+	"egp/common/Formatter",
+	"dojo/text!./${1}/toolbar.html",
+	"dojo/text!./${1}/form.html"],
+
+function(lang,declare,Memory,CrudTemplate,Formatter,
+tpl_toolbar,tpl_form){
+	return declare("egw.${2}.${1}",CrudTemplate,{
+		inject: {
+			grid_prop: {
+				store: new Memory({
+					idProperty: "role_id",
+					data: [{
+						role_id: "1",
+						role_name: "1",
+						memo: '1'
+					}]
+				}),
+				structure: [{
+					field: 'role_name',
+					name: '角色名',
+					width: '150px',
+					decorator: function(field) {
+						return Formatter.options(
+						field, {
+							'_1': "正常",
+							'_2': "锁定",
+							'_4': "注销"
+						});
+					}
+				}]
+			},
+
+			toolbar_prop: {
+				//${3}disabled: " detail export ", //设置不需要的按钮,如 " add delete "
+				//${4}add: tpl_toolbar //引入的控件html
+			},
+
+			tpl_prop: {
+				//${5}form: tpl_form,
+				//${6}otherPane: ""
+			}
+		},
+
+		on${7}BtnClick: function(e) {
+			${8}
+		}
+	});
+});
+]]></content>
+	<tabTrigger>definecrud</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

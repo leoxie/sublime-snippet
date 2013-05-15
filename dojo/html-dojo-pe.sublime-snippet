@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<div data-dojo-type="${1:dijit/}" data-dojo-attach-point="${2}" 
+	data-dojo-attach-event="${3}">
+	 ${4}
+</div>
+]]></content>
+	<tabTrigger>dojodivpe</tabTrigger>
+	<scope>text.html</scope>
+</snippet>

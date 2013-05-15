@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<div data-dojo-type="${1:dijit/}" data-dojo-attach-point="${2}">
+	 ${3}
+</div>
+]]></content>
+	<tabTrigger>dojodivap</tabTrigger>
+	<scope>text.html</scope>
+</snippet>
