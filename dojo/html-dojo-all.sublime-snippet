@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<div data-dojo-type="${1:this}" data-dojo-props="${2:snippet}" 
+	 data-dojo-attach-point="${3:snippet}" data-dojo-attach-event="${4:snippet}">
+	 ${5:snippet}
+</div>
+]]></content>
+	<tabTrigger>dojodivall</tabTrigger>
+	<scope>source.html</scope>
+</snippet>
