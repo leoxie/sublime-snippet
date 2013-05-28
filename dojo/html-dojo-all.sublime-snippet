@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-<div data-dojo-type="${1:dijit/}" data-dojo-props="${2}" 
-	 data-dojo-attach-point="${3}" data-dojo-attach-event="${4}">
+<div data-dojo-type="${1:dijit/}" data-dojo-attach-point="${2}" 
+	data-dojo-props="${3}" data-dojo-attach-event="${4}">
 	 ${5}
 </div>
 ]]></content>
