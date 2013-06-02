@@ -25,14 +25,11 @@ tpl_toolbar,tpl_form){
 					field: 'role_name',
 					name: '角色名',
 					width: '150px',
-					decorator: function(field) {
-						return Formatter.options(
-						field, {
+					decorator: Formatter.options({
 							'_1': "正常",
 							'_2': "锁定",
 							'_4': "注销"
-						});
-					}
+						})
 				}]
 			},
 
