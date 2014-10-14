@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+define([
+	"dojo/_base/lang",
+	"dojo/_base/declare",
+	"egp/template/_TemplatedMixin",
+	"dojo/text!./${1}/form.html",
+	
+	"dijit/form/Form",
+	"dijit/form/Button"],
+
+function(lang, declare, _TemplatedMixin, tpl_form) {
+	return declare("egp.${2}.${1}", _TemplatedMixin, {
+
+		templateString: tpl_form,
+
+		${3}
+
+	});
+});
+]]></content>
+	<tabTrigger>definetpl</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

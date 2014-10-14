@@ -11,7 +11,7 @@ define([
 
 function(lang,declare,JsonRest,CrudTemplate,Formatter,
 tpl_toolbar,tpl_form){
-	return declare("egw.${2}.${1}",CrudTemplate,{
+	return declare("egp.${2}.${1}",CrudTemplate,{
 		inject: {
 			grid_prop: {
 				store: new JsonRest({
