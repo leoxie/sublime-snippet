@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+
+var ${1}Schema = new Schema({
+	${3}: String, 
+	${4}
+});
+
+mongoose.model('${2}', ${1}Schema, '${1}');
+]]></content>
+	<tabTrigger>mmodel</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

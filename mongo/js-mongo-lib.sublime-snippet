@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+var ${1} = require('mongoose').model('${1}');
+
+exports.search = function(name, cb) {
+	${1}.findOne({
+		name: name
+	}, cb);
+};
+
+exports._ = ${1};
+]]></content>
+	<tabTrigger>mlib</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
