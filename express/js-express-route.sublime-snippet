@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+var express = require('express'),
+	${1} = express.Router();
+
+${1}.get('/', function(req, res) {
+	res.render('${2}');
+});
+
+${1}.post('/', function(req, res) {
+	res.render('${3}');
+});
+
+exports.${1} = ${1};
+]]></content>
+	<tabTrigger>eroute</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

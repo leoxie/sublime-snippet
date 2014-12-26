@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+'use strict';
+
+module.exports = function(router) {
+	${1}
+};
+
+]]></content>
+	<tabTrigger>kc</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

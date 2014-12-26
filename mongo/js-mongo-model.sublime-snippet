@@ -1,14 +1,21 @@
 <snippet>
 	<content><![CDATA[
+'use strict';
+
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
 
-var ${1}Schema = new Schema({
-	${3}: String, 
-	${4}
-});
+var ${1}Model = function() {
 
-mongoose.model('${2}', ${1}Schema, '${1}');
+    var ${1}Schema = mongoose.Schema({
+        ${3}: String, 
+		${4}
+    });
+
+    return mongoose.model('${2}', ${1}Schema, '${1}');
+};
+
+module.exports = new ${1}Model();
+
 ]]></content>
 	<tabTrigger>mmodel</tabTrigger>
 	<scope>source.js</scope>

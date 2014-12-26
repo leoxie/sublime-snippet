@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+
+router.post('/${1}', ${2} function(req, res) {
+		${4}
+		res.render('${3}');
+	});
+
+]]></content>
+	<tabTrigger>rp</tabTrigger>
+	<scope>source.js</scope>
+</snippet>
